@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #222;
+  color: white;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  height: 100vh;
+}
+
+main {
+  max-width: 768px;
+  padding: 2rem;
+  background-color: #333;
+  border-radius: 3px;
+}
+
+main > header h1 {
+  margin-bottom: 2rem;
+}
+
+main #search-form form {
+  display: flex;
+  gap: 1rem;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+main #search-form input {
+  flex: 1;
+  height: 25px;
+  border: none;
+  border-radius: 5px;
+  padding: 0 10px;
+  font-size: 1rem;
+  outline: none;
+}
+
+main #search-form button {
+  background-color: rgba(21, 157, 236, 0.712);
+  color: white;
+  font-weight: bold;
+  border: none;
+  padding: 0 1rem;
+  height: 25px;
+  border-radius: 5px;
+}
+
+main #weather-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+main .weather-data h2 {
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+
+main .weather-data span {
+  font-size: 3rem;
+  font-weight: bold;
+}
