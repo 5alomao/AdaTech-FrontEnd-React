@@ -50,8 +50,10 @@ form === null || form === void 0
           return;
         }
         try {
+          // DEFINIR API_KEY DO OPEN WHEATER MAP PARA FUNCIONAR
+          const api_key;
           const response = yield fetch(
-            `https://api.openweathermap.org/data/2.5/weather?q=${localization}&appid=136b7308b23fb44189d2a5ab79275ac4&lang=pt_br&units=metric`
+            `https://api.openweathermap.org/data/2.5/weather?q=${localization}&appid=${api_key}&lang=pt_br&units=metric`
           );
           const data = yield response.json();
           const infos = {
